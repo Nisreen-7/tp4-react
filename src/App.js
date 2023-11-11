@@ -6,6 +6,7 @@ import ProductsList from './components/ProductsList';
 
 import { Routes,Route } from 'react-router-dom';
 import About from './components/About';
+import ProductDetails from './components/ProductDetails';
 
 function App() {
   return (
@@ -18,9 +19,12 @@ function App() {
                   <Slider />
                   <ProductsList />
               </>
-            }> 
-    </Route>
-    <Route path="About" element={ <> <About /> </>}></Route>
+            }
+     /> 
+     <Route path="about" element={<About />} 
+      />
+     <Route path="product/:productId" element={<ProductDetails />} 
+      />
    </Routes>
   
   
